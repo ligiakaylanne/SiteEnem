@@ -1,0 +1,36 @@
+/* Estilos para a seção FAQ */
+.faq-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    border: 3px solid #007F86;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Estilos para o título principal */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #ADD8E6;
+    font-family: Arial, sans-serif;
+}

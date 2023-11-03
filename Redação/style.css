@@ -1,0 +1,172 @@
+body, h1, h2, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para os títulos (h1, h2) */
+h1, h2 {
+    color: white;
+    text-align: center;
+    
+}
+
+/* Estilo para os parágrafos (p) */
+p {
+    margin: 15px 0;
+    
+}
+
+/* Estilo para as listas ordenadas (ol) e não ordenadas (ul) */
+ul, ol {
+    padding-left: 10px; /* Ajuste o valor conforme necessário */
+    list-style-position: inside;
+    color: #007F86;
+    font-weight: bold;
+}
+
+
+/* Estilo para os links (a) */
+a {
+    display: block;
+    text-align: center;
+    background-color: #007F86;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+a:hover {
+    background-color: #ADD8E6;
+    text-decoration: none;
+}
+
+.paragrafo{
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #007F86;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.carousel-item iframe {
+    width: 50px; 
+    height: 80px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; 
+    height: 150px;
+    background-color: #007F86; 
+    border: 1px solid #007F86;
+    border-radius: 5px;
+    font-size: 50px; 
+    color: #fff; 
+    position: absolute;
+    top: 30%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #007F86;
+}
+.card {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007F86;
+    text-align: center;
+}
+
+.passo-passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.passo-passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #007F86;
+}
+
+h2 {
+    font-size: 18px;
+    color: #007F86;
+    font-weight: bold;
+    border: 2px solid #007F86;
+}
+
+p {
+    font-size: 16px;
+}
+.center {
+    text-align: center;
+  }
+  .custom-alert {
+    padding: 10px; /* Ajuste o valor conforme necessário */
+    font-size: 14px; /* Ajuste o valor conforme necessário */
+  }
+  .titulo {
+    animation: piscar 1s infinite alternate ;
+    font-size: 25px;
+    font-family: fantasy;
+  }
+  .caixa {
+    border: 2px solid #3498db; /* Cor da borda e espessura */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff; /* Cor de fundo da caixa */
+    text-align: center;
+  }
+  
+  @keyframes piscar {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  

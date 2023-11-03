@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ADD8E6;
+}
+
+.notas {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #007F86;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 350px;
+    width: 350px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin: 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #007F86;
+    margin-top: 10px;
+}
+
+input {
+    width: 80px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 2px solid #007F86;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007F86; /* Cor do botão (azul-verde) */
+    color: black; /* Cor do texto do botão (branco) */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição de cor suave */
+    }
+
+
+button:hover {
+    background-color: #ADD8E6;
+}
+
+/* Estilos para telas menores (mídia query) */
+@media (max-width: 768px) {
+    .notas {
+        font-size: 16px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 6px;
+    }
+}
+
