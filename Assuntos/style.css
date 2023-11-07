@@ -21,11 +21,15 @@ header {
     margin: 10px 0;
     background-color: #fff;
     padding: 10px;
+    text-align: center;
+    
 }
 
 .itens {
     list-style-type: none;
     padding: 0;
+    display: block;
+    text-align: center;
 }
 
 .itens li {
@@ -86,6 +90,39 @@ img{
   .dicas a{
     text-decoration: none;
   }
+  h4 {
+    display: block;
+    text-align: center;
+    background-color: #007F86;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+h4:hover {
+    background-color: #ADD8E6;
+    text-decoration: none;
+    color: #007F86;
+}
+a {
+  display: inline-block;
+  padding: 12px 24px; /* Aumento do espaçamento interno */
+  background-color: #007F86;;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição suave */
+}
+
+a:hover {
+  background-color: #ADD8E6;
+  transform: scale(1.05); /* Efeito de escala suave no hover */
+}
+
 
   
   
