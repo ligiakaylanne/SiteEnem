@@ -108,19 +108,19 @@ h4:hover {
     text-decoration: none;
     color: #007F86;
 }
-a {
-  display: inline-block;
-  padding: 12px 24px; /* Aumento do espaçamento interno */
-  background-color: #007F86;;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição suave */
+.nav-link a{
+    display: inline-block;
+    padding: 12px 24px; /* Aumento do espaçamento interno */
+    background-color: #007F86;;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição suave */
 }
 
 a:hover {
-  background-color: #ADD8E6;
-  transform: scale(1.05); /* Efeito de escala suave no hover */
+    background-color: #ADD8E6;
+    transform: scale(1.05); /* Efeito de escala suave no hover */
 }
 
 
