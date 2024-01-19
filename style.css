@@ -1,11 +1,11 @@
-/* Estilos para a mensagem de boas-vindas */
 h1 {
     font-size: 36px;
-    color: #333; /* Cor do texto (cinza escuro) */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
-    animation: bounce 1.5s infinite; /* Animação de pulsação */
+    color: #111; /* ou #222 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: bounce 1.5s infinite;
     text-align: center;
 }
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -21,25 +21,23 @@ h1 {
 
 a {
     display: inline-block;
-    padding: 12px 24px; /* Aumento do espaçamento interno */
-    background-color: #007F86;;
+    padding: 12px 24px;
+    background-color: #007F86;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição suave */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
     background-color: #ADD8E6;
-    transform: scale(1.05); /* Efeito de escala suave no hover */
+    transform: scale(1.05);
 }
 
 body {
     background-color: #ADD8E6;
- 
 }
 
-/* Centralizar o carrossel horizontalmente */
 .carousel {
     margin: 0 auto;
 }
@@ -47,17 +45,18 @@ body {
 .carousel-inner img {
     display: flex;
     align-items: center;
-    border: 2px solid #ADD8E6; /* Adiciona uma borda preta de 2px */
-    border-radius: 10px; /* Arredonda as pontas da imagem */
-    width: 300px; /* Defina a largura desejada */
-    height: 300px; /* Defina a altura desejada */
+    border: 2px solid #ADD8E6;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
 }
+
 .inicio {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     background-color: #007F86;
-    padding: 10px 0px; /* Ajustei o valor do padding horizontal */
+    padding: 10px 0;
     border: 2px solid #007F86;
     border-radius: 15px;
     margin-top: 5px;
@@ -66,30 +65,146 @@ body {
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-
 a.btn-primary {
     background-color: #007F86;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 20px; /* Aumentando o tamanho da fonte */
     padding: 10px 10px;
     font-size: 15px;
 }
 
 a.btn-primary:hover {
-    background-color: #005960; /* Uma cor mais escura no hover */
+    background-color: #ADD8E6;
     transform: scale(1.05);
-    font-size: 15px; /* Reduza o tamanho da fonte no hover */
-    padding: 20px 20px
+    font-size: 15px;
+    padding: 20px 20px;
+    border-color: #ADD8E6;
+    color: #333;
+}
 
+.offcanvas-header {
+    background-color: #ADD8E6;
+}
+
+.offcanvas {
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.center-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+hr{
+    border-width: 10px;
+    color: #007F86;
+}
+
+.faq-card {
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+    width: calc(25% - 15px);
+    background-color: rgba(255, 255, 255, 0.3); /* Ajuste a opacidade aqui */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.faq-title {
+    color: #333;
 }
 
 
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
+.answer {
+    margin-bottom: 0;
+}
 
+/* Adicione estas regras para estilizar as legendas do carrossel */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    background:#007F86;
+    padding: 10px;
+    width: 100%;
+}
 
+.carousel-caption p {
+    font-size: 16px;
+    margin: 5px 0;
+}
 
+/* Ajuste para melhor espaçamento entre a legenda e a borda inferior */
+.carousel-inner {
+    position: relative;
+}
 
+/* Feedback Form */
+#feedbackForm {
+    max-width: 400px;
+    margin: 20px auto; /* Adicionei margem para ajustar o formulário */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+}
 
+#feedbackForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+.compartilhamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+/* .cronometro-container {
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cronometro-container h2 {
+    color: #007F86;
+}
+
+.cronometro-container p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cronometro-container a.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cronometro-container a.btn-primary:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+} */
