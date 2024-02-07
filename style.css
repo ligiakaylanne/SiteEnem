@@ -104,17 +104,7 @@ hr{
     color: #007F86;
 }
 
-.faq-card {
-    float: left;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 5px;
-    padding: 10px;
-    width: calc(25% - 15px);
-    background-color: rgba(255, 255, 255, 0.3); /* Ajuste a opacidade aqui */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-}
+
 .faq-title {
     color: #333;
 }
@@ -175,36 +165,3 @@ hr{
     justify-content: center;
     flex-direction: column;
   }
-/* .cronometro-container {
-    text-align: center;
-    max-width: 400px;
-    margin: 20px auto; 
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.cronometro-container h2 {
-    color: #007F86;
-}
-
-.cronometro-container p {
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.cronometro-container a.btn-primary {
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 15px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.cronometro-container a.btn-primary:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
-} */
