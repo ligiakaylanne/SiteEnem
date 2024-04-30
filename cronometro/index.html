@@ -12,18 +12,18 @@
     <div class="message">
         <p>Explore o poder do tempo dedicado ao estudo e veja suas habilidades e conhecimentos expandirem.
             <br>
-         Cada segundo conta, cada minuto é uma oportunidade para se aproximar dos seus objetivos educacionais.
-         <br>
-         Aproveite esta jornada de aprendizado e transforme o tempo em uma ferramenta valiosa para o seu sucesso! 📚🕒✨</p>
+         Cada segundo conta, cada minuto é uma oportunidade para se aproximar dos seus objetivos educacionais.📚🕒✨</p>
          <br>
     </div>
     
     <div class="card">
         <h1>Cronômetro</h1>
         <div id="cronometro">00:00:00</div>
+         <div class="button-container">
         <button onclick="iniciarCronometro()">Iniciar</button>
         <button onclick="pausarCronometro()">Pausar</button>
         <button onclick="zerarCronometro()">Zerar</button>
+    </div>
         <!-- <div id="mensagem"></div> -->
         
     </div>
@@ -32,7 +32,7 @@
     <script>
         let tempoAtual = 0;
         let cronometro;
-
+    
         function iniciarCronometro() {
             cronometro = setInterval(() => {
                 tempoAtual++;
@@ -40,51 +40,51 @@
                 salvarTempo();
             }, 1000);
         }
-
+    
         function pausarCronometro() {
             clearInterval(cronometro);
             salvarTempo();
             exibirMensagem();
         }
-
+    
         function zerarCronometro() {
             tempoAtual = 0;
             exibirTempo();
             salvarTempo();
         }
-
+    
         function exibirTempo() {
             const horas = Math.floor(tempoAtual / 3600);
             const minutos = Math.floor((tempoAtual % 3600) / 60);
             const segundos = tempoAtual % 60;
             document.getElementById('cronometro').innerText = `${formatarNumero(horas)}:${formatarNumero(minutos)}:${formatarNumero(segundos)}`;
         }
-
+    
         function formatarNumero(numero) {
             return numero < 10 ? `0${numero}` : numero;
         }
-
+    
         function salvarTempo() {
             localStorage.setItem('tempoSalvo', tempoAtual);
         }
-
+    
         function carregarTempoSalvo() {
             const tempoSalvo = localStorage.getItem('tempoSalvo');
             if (tempoSalvo !== null) {
                 tempoAtual = parseInt(tempoSalvo);
-                iniciarCronometro(); // Continua o cronômetro quando a página é carregada
+                exibirTempo(); // Mostra o tempo carregado ao iniciar a página
             }
         }
-
+    
         function exibirMensagem() {
             const minutosEstudados = Math.floor(tempoAtual / 60);
             const mensagem = `Você estudou por ${minutosEstudados} minutos. Parabéns!`;
             document.getElementById('mensagem').innerText = mensagem;
         }
-
+    
         // Carregar tempo salvo ao iniciar a página
         carregarTempoSalvo();
     </script>
-
+    
 </body>
 </html>
