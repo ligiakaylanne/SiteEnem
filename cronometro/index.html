@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronômetro com Mensagem Personalizada</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    
     <div class="message">
-        <p>Explore o poder do tempo dedicado ao estudo e veja suas habilidades e conhecimentos expandirem. Cada segundo conta, cada minuto é uma oportunidade para se aproximar dos seus objetivos educacionais. Aproveite esta jornada de aprendizado e transforme o tempo em uma ferramenta valiosa para o seu sucesso! 📚🕒✨</p>
+        <p>Explore o poder do tempo dedicado ao estudo e veja suas habilidades e conhecimentos expandirem.
+            <br>
+         Cada segundo conta, cada minuto é uma oportunidade para se aproximar dos seus objetivos educacionais.
+         <br>
+         Aproveite esta jornada de aprendizado e transforme o tempo em uma ferramenta valiosa para o seu sucesso! 📚🕒✨</p>
+         <br>
     </div>
     
     <div class="card">
@@ -17,9 +24,11 @@
         <button onclick="iniciarCronometro()">Iniciar</button>
         <button onclick="pausarCronometro()">Pausar</button>
         <button onclick="zerarCronometro()">Zerar</button>
-        <div id="mensagem"></div>
+        <!-- <div id="mensagem"></div> -->
+        
     </div>
-
+    <div id="mensagem"></div>
+ 
     <script>
         let tempoAtual = 0;
         let cronometro;
