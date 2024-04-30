@@ -54,6 +54,25 @@ body {
     width: 300px;
     height: 300px;
 }
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    background:#007F86;
+    padding: 10px;
+    width: 100%;
+    max-width: 90%; 
+    border-radius: 15px; 
+
+}
+
+.carousel-caption p {
+    font-size: 16px;
+    margin: 5px 0;
+}
 
 .inicio {
     font-size: 24px;
