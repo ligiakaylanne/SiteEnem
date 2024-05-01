@@ -176,3 +176,19 @@ hr{
 h2{
     text-align: center;
 }
+footer {
+    text-align: center; /* Centralizar o conteúdo do rodapé */
+}
+
+.link-sobre {
+    background-color: #ADD8E6;
+    color: #007F86; /* Cor do link */
+    text-decoration: none; 
+    font-weight: bold; 
+}
+.link-sobre:hover{
+    background-color: #ADD8E6;
+}
+
+
+
