@@ -1,0 +1,51 @@
+/* Estilos para os cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    max-width: 90%; /* Largura máxima do card */
+    margin: 20px;
+    text-align: center;
+}
+
+.tema-titulo {
+    font-size: 20px;
+    color: #007F86;
+    margin-bottom: 10px;
+}
+
+.tema-descricao {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #007F86;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007F86;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

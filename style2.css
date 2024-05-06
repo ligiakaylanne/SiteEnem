@@ -37,3 +37,18 @@ p {
 p:last-of-type {
     margin-bottom: 0;
 }
+.profile-image-container {
+    text-align: center; /* Centraliza a imagem */
+    margin-bottom: 20px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.profile-image {
+    border-radius: 50%; /* Deixa a imagem redonda */
+    border: 2px solid #007F86; /* Adiciona uma borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona um efeito de sombra */
+    width: 200px; /* Ajusta a largura da imagem */
+    height: 200px; /* Ajusta a altura da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    display: block; /* Remove margens extras */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
