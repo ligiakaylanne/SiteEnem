@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-size: 36px;
     color: #111; /* ou #222 */
@@ -9,7 +10,6 @@ h1 {
     animation: bounce 1.5s infinite;
     text-align: center;
 }
-
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -44,34 +44,32 @@ body {
 
 .carousel {
     margin: 0 auto;
+    max-width: 600px; /* Limite a largura máxima do carrossel */
 }
 
 .carousel-inner img {
-    display: flex;
-    align-items: center;
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
     border: 2px solid #ADD8E6;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
 }
+
 .carousel-caption {
     position: absolute;
-    bottom: 0;
+    bottom: 15px; /* Ajusta a posição do texto */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: #fff;
-    background:#007F86;
+    background: rgba(0, 127, 134, 0.8); /* Fundo semitransparente */
     padding: 10px;
-    width: 100%;
-    max-width: 90%; 
+    width: 90%;
     border-radius: 15px; 
-
 }
 
 .carousel-caption p {
     font-size: 16px;
-    margin: 5px 0;
+    margin: 0;
 }
 
 .inicio {
@@ -122,16 +120,15 @@ a.btn-primary:hover {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-hr{
+
+hr {
     border-width: 10px;
     color: #007F86;
 }
 
-
 .faq-title {
     color: #333;
 }
-
 
 .question {
     font-weight: bold;
@@ -142,40 +139,23 @@ hr{
     margin-bottom: 0;
 }
 
-.carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #fff;
-    background:#007F86;
-    padding: 10px;
-    width: 100%;
-}
-
-.carousel-caption p {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-.carousel-inner {
-    position: relative;
-    
-}
-.card-body{
+.card-body {
     background-color: #007F86;
 }
-.card-title{
+
+.card-title {
     color: #fff;
 }
-.card-text{
+
+.card-text {
     color: #111;
     font-family: Arial, Helvetica, sans-serif;
 }
-h2{
+
+h2 {
     text-align: center;
 }
+
 footer {
     text-align: center; /* Centralizar o conteúdo do rodapé */
 }
@@ -183,12 +163,10 @@ footer {
 .link-sobre {
     background-color: #ADD8E6;
     color: #007F86; /* Cor do link */
-    text-decoration: none; 
-    font-weight: bold; 
+    text-decoration: none;
+    font-weight: bold;
 }
-.link-sobre:hover{
+
+.link-sobre:hover {
     background-color: #ADD8E6;
 }
-
-
-

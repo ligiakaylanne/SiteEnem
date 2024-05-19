@@ -71,3 +71,11 @@ a:hover {
     transform: scale(1.05);
     color: #333;
 }
+.card img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 150px; /* Define uma largura máxima para todas as imagens */
+    max-height: 150px; /* Define uma altura máxima para todas as imagens */
+    margin: 0 auto 10px auto; /* Centraliza a imagem e adiciona margem inferior */
+    display: block; /* Garante que a imagem seja um bloco para o margin funcionar */
+}
