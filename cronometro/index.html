@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronômetro com Mensagem Personalizada</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     
@@ -20,54 +19,59 @@
         <h1>Cronômetro</h1>
         <div id="cronometro">00:00:00</div>
          <div class="button-container">
-        <button onclick="iniciarCronometro()">Iniciar</button>
-        <button onclick="pausarCronometro()">Pausar</button>
-        <button onclick="zerarCronometro()">Zerar</button>
-    </div>
-        <!-- <div id="mensagem"></div> -->
-        
+            <button onclick="iniciarCronometro()">Iniciar</button>
+            <button onclick="pausarCronometro()">Pausar</button>
+            <button onclick="zerarCronometro()">Zerar</button>
+        </div>
     </div>
     <div id="mensagem"></div>
  
     <script>
         let tempoAtual = 0;
         let cronometro;
-    
+
         function iniciarCronometro() {
-            cronometro = setInterval(() => {
-                tempoAtual++;
-                exibirTempo();
-                salvarTempo();
-            }, 1000);
+            if (!cronometro) {
+                cronometro = setInterval(() => {
+                    tempoAtual++;
+                    exibirTempo();
+                    salvarTempo();
+                }, 1000);
+            }
         }
-    
+
         function pausarCronometro() {
             clearInterval(cronometro);
+            cronometro = null; // Resetting the interval variable
             salvarTempo();
             exibirMensagem();
         }
-    
+
         function zerarCronometro() {
-            tempoAtual = 0;
-            exibirTempo();
-            salvarTempo();
-        }
-    
+    clearInterval(cronometro);
+    cronometro = null; // Resetting the interval variable
+    tempoAtual = 0;
+    exibirTempo();
+    salvarTempo();
+    document.getElementById('mensagem').innerText = ""; // Limpa a mensagem ao zerar o cronômetro
+}
+
+
         function exibirTempo() {
             const horas = Math.floor(tempoAtual / 3600);
             const minutos = Math.floor((tempoAtual % 3600) / 60);
             const segundos = tempoAtual % 60;
             document.getElementById('cronometro').innerText = `${formatarNumero(horas)}:${formatarNumero(minutos)}:${formatarNumero(segundos)}`;
         }
-    
+
         function formatarNumero(numero) {
             return numero < 10 ? `0${numero}` : numero;
         }
-    
+
         function salvarTempo() {
             localStorage.setItem('tempoSalvo', tempoAtual);
         }
-    
+
         function carregarTempoSalvo() {
             const tempoSalvo = localStorage.getItem('tempoSalvo');
             if (tempoSalvo !== null) {
@@ -75,13 +79,15 @@
                 exibirTempo(); // Mostra o tempo carregado ao iniciar a página
             }
         }
-    
+
         function exibirMensagem() {
-            const minutosEstudados = Math.floor(tempoAtual / 60);
-            const mensagem = `Você estudou por ${minutosEstudados} minutos. Parabéns!`;
-            document.getElementById('mensagem').innerText = mensagem;
-        }
-    
+    const minutosEstudados = Math.floor(tempoAtual / 60);
+    const segundosEstudados = tempoAtual % 60;
+    const mensagem = `Você estudou por ${minutosEstudados} minutos e ${segundosEstudados} segundos. Parabéns!`;
+    document.getElementById('mensagem').innerText = mensagem;
+}
+
+
         // Carregar tempo salvo ao iniciar a página
         carregarTempoSalvo();
     </script>
