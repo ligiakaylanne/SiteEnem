@@ -1,0 +1,199 @@
+*{
+    margin: 0;  
+}
+
+/*comeco da secao cabecalho e navegacao*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1#titulo-principal{
+    color:#0000ff;
+}
+
+section.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.cabecalho-paragrafo{
+    color: #000000;
+    margin-left: 50px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*divisao do menu da redacao dropdown*/
+
+div.menu-redacao{
+    position: relative;
+    display: inline-block;
+}
+
+button#botao-abre-menu-redacao{
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+div.caixa-menu-redacao{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+div.caixa-menu-redacao > a {
+    background-color: #0000ff;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 12px 14px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.5s;
+}
+
+div.caixa-menu-redacao > a:hover {
+    background-color: #6464d8;
+}
+
+div.menu-redacao:hover > div.caixa-menu-redacao {
+    display: block;
+}
+
+div.menu-redacao:hover > button#botao-abre-menu-redacao {
+    background-color: #f72a2a;
+    border: none;
+    border-radius: 5px;
+}
+
+/*
+fim da secao cabecalho e navegacao
+comeco da secao bem vindo
+*/
+
+section.secao-bem-vindo{
+    background-color: #ff0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+}
+
+div.sub-secao-bem-vindo{
+    position: relative;
+    background-color: #f0f8ff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20rem;
+    height: 11em;
+}
+
+div.sub-secao-bem-vindo > h2{
+    color: #0000ff;
+    font-weight: bold;
+}
+
+div.sub-secao-bem-vindo > p{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+button#botao-assuntos-enem{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-weight: bold;
+    background-color: #0000ff;
+    color:#f0f8ff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+button#botao-assuntos-enem:hover{
+    background-color: #6c6cdd;
+}
+
+/*
+fim da secao bem vindo
+comeco da secao seu acesso
+*/
+
+section.secao-seu-acesso{
+    background: linear-gradient(to left, #0000ff, #0000ff5d, #ffffff);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1.8rem 0rem;
+}
+
+div.sub-secao-seu-acesso{
+    width: 20rem;
+}
+
+div.sub-secao-seu-acesso > p{
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+
+/*
+fim da secao seu acesso
+comeco da secao duvidas frequentes
+*/
+
+section.duvidas-frequentes{
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+div.secao-duvidas-frequentes{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.coluna-duvidas-frequentes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.sub-secao-duvidas-frequentes, div.sub-secao-resposta-duvidas-frequentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 8rem;
+    background-color: #0000ff;
+    color:#f0f8ff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+div.sub-secao-duvidas-frequentes > p, div.sub-secao-resposta-duvidas-frequentes > p {
+    margin: 40px;
+}
+
+div.sub-secao-resposta-duvidas-frequentes{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
